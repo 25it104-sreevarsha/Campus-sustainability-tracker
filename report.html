@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Report Sustainability Action</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🌱 Report Sustainability Action</h1>
+
+<form id="reportForm">
+
+<div class="form-group">
+<label for="name">Name     :</label>
+<input type="text" id="name" placeholder="Enter your name" required>
+</div>
+<br>
+<div class="form-group">
+<label for="department">Department    :</label>
+<input type="text" id="department" placeholder="Enter your department" required>
+</div>
+<br>
+<div class="form-group">
+<label for="actionType">Action Type :</label>
+<select id="actionType">
+
+<option value="Recycling">♻️ Recycling</option>
+<option value="Bicycle">🚴 Used Bicycle</option>
+<option value="Electricity">⚡ Saved Electricity</option>
+<option value="Water">💧 Reported Water Leakage</option>
+<option value="Planting">🌳 Planted Trees</option>
+
+</select>
+</div>
+<br>
+<div class="form-group">
+<label for="description">Description :</label>
+<textarea id="description" rows="4" placeholder="Describe your sustainability action"></textarea>
+</div>
+<br>
+<button type="submit">Submit Action</button>
+
+</form>
+
+<p id="successMessage" style="display:none; color:green; font-weight:bold; margin-top:10px;">
+✅ Action submitted successfully!
+</p>
+
+</div>
+
+<!-- Scripts -->
+<script type="module" src="protect.js"></script>
+<script type="module" src="app.js"></script>
+<script type="module" src="logout.js"></script>
+</body>
+</html>

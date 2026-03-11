@@ -1,0 +1,16 @@
+import { auth } from "./firebase.js";
+import { signOut } from "https://www.gstatic.com/firebasejs/12.10.0/firebase-auth.js";
+
+window.logout = function(){
+
+signOut(auth).then(() => {
+
+window.location.href = "login.html";
+
+}).catch((error) => {
+
+console.error("Logout Error:", error);
+
+});
+
+};

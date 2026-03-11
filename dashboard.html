@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<center>
+<h1>📊 Sustainability Dashboard</h1>
+
+<h2>Total Reports</h2>
+<p id="totalReports">0</p>
+
+<h2>🌍 Total CO₂ Saved</h2>
+<p id="co2Saved">0 kg</p>
+
+<h2>🌍 Campus Sustainability Score</h2>
+
+<div class="score-container">
+<div id="scoreBar"></div>
+</div>
+
+<p id="scoreText">0%</p>
+
+<h2>🌿 Environmental Impact</h2>
+
+<div class="impact-grid">
+
+<div class="impact-card">
+<h3>🌳 Trees Planted</h3>
+<p id="treesCount">0</p>
+</div>
+
+<div class="impact-card">
+<h3>🚴 Bicycle Trips</h3>
+<p id="bicycleCount">0</p>
+</div>
+
+<div class="impact-card">
+<h3>⚡ Electricity Saved</h3>
+<p id="electricityCount">0</p>
+</div>
+
+<div class="impact-card">
+<h3>💧 Water Issues Reported</h3>
+<p id="waterCount">0</p>
+</div>
+
+<div class="impact-card">
+<h3>♻️ Recycling Actions</h3>
+<p id="recyclingCount">0</p>
+</div>
+
+</div>
+
+<h2>Action Statistics</h2>
+<ul id="actionStats"></ul>
+
+<h2>Action Chart</h2>
+<canvas id="actionChart"></canvas>
+<script type="module" src="protect.js"></script>
+<script type="module" src="dashboard.js"></script>
+<script type="module" src="logout.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</center>
+</body>
+</html>
